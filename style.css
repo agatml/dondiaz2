@@ -253,7 +253,7 @@ h2 {
 
 .sobre-content {
   display: flex;
-  align-items: flex-start; /* evita alinhamento vertical central */
+  align-items: flex-start; 
   gap: 6rem;
 }
 
@@ -267,7 +267,8 @@ h2 {
 
 /* Imagem */
 .sobre-imagem img {
-  max-width: 140%;
+  max-width: 100%;
+  height: auto;
    
   
 }
