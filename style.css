@@ -195,7 +195,7 @@ body {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.45);
+  background: rgba(0, 0, 0, 0.70);
   z-index: 2;
 }
 
@@ -269,6 +269,8 @@ h2 {
 .sobre-imagem img {
   max-width: 100%;
   height: auto;
+  border-radius: 2%;
+  
    
   
 }
