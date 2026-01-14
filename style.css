@@ -1,4 +1,4 @@
-/* RESET */
+
 * {
   margin: 0;
   padding: 0;
@@ -6,11 +6,12 @@
   
 }
 
-/* =========================
-   VARIÁVEIS DE TEMA
-========================= */
+html {
+  font-size: 16px;
+}
 
-/* TEMA CLARO (default) */
+
+
 :root {
   --bg-primary: #ffffff;
   --bg-secondary: #f2f2f2;
@@ -27,7 +28,7 @@
   --accent: #c00000;
 }
 
-/* TEMA ESCURO */
+
 [data-theme="dark"] {
   --bg-primary: #121212;
   --bg-secondary: #1e1e1e;
@@ -44,9 +45,7 @@
   --accent: #e00000;
 }
 
-/* =========================
-   BASE
-========================= */
+
 
 body {
   font-family: Arial, Helvetica, sans-serif;
@@ -55,9 +54,7 @@ body {
   line-height: 1.6;
 }
 
-/* =========================
-   CONTAINER
-========================= */
+
 
 .container {
   width: 100%;
@@ -66,9 +63,7 @@ body {
   margin: 0 auto;
 }
 
-/* =========================
-   HEADER
-========================= */
+
 
 .header {
   background-color: var(--header-bg);
@@ -100,11 +95,7 @@ body {
   font-weight: bolder;
 }
 
-/* BOTÃO TOGGLE */
-/* =========================
-   SWITCH DE TEMA
-========================= */
-/* Variáveis específicas do switch */
+
 :root {
   --switch-thumb-color: #000000;
 }
@@ -113,7 +104,7 @@ body {
   --switch-thumb-color: #ffffff;
 }
 
-/* Switch */
+
 .theme-switch {
   width: 52px;
   height: 28px;
@@ -124,7 +115,7 @@ body {
   cursor: pointer;
 }
 
-/* Bolinha */
+
 .switch-thumb {
   width: 22px;
   height: 22px;
@@ -137,7 +128,7 @@ body {
   transition: left 0.3s ease, 0.3s ease;
 }
 
-/* Posição no modo escuro */
+
 
 [data-theme="dark"] .theme-switch {
   background-color: var(--header-bg);
@@ -148,13 +139,7 @@ body {
   left: 27px;
 }
 
-/* =========================
-   HERO
-========================= */
 
-/* =========================
-   HERO COM CARROSSEL
-========================= */
 
 .hero {
   position: relative;
@@ -164,13 +149,13 @@ body {
   overflow: hidden;
 }
 
-/* Carrossel */
+/* carrossel */
 .hero-carousel {
   position: absolute;
   inset: 0;
 }
 
-/* Slides */
+
 .carousel-slide {
   position: absolute;
   inset: 0;
@@ -183,14 +168,14 @@ body {
   z-index: 1;
 }
 
-/* Imagens */
+
 .carousel-slide img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-/* Overlay escuro */
+
 .hero::before {
   content: "";
   position: absolute;
@@ -199,7 +184,7 @@ body {
   z-index: 2;
 }
 
-/* Conteúdo fixo */
+
 .hero-content {
   position: relative;
   z-index: 3;
@@ -214,7 +199,7 @@ body {
 }
 
 .hero-content h1 {
-  font-size: clamp(1.8rem, 5vw, 3rem);
+  font-size: clamp(1.6rem, 4vw, 2.6rem);
   margin-bottom: 1rem;
 }
 
@@ -224,16 +209,14 @@ body {
   max-width: 600px;
 }
 
-/* Mobile */
+
 @media (max-width: 768px) {
   .hero {
     height: 70vh;
   }
 }
 
-/* =========================
-   SEÇÕES
-========================= */
+
 
 .section {
   padding: 4rem 0;
@@ -247,9 +230,7 @@ h2 {
   margin-bottom: 1.5rem;
 }
 
-/* =========================
-   SOBRE
-========================= */
+
 
 .sobre-content {
   display: flex;
@@ -257,7 +238,7 @@ h2 {
   gap: 6rem;
 }
 
-/* Coluna da imagem */
+
 .sobre-imagem {
   flex: 0 0 20%;
   display: flex;
@@ -265,7 +246,7 @@ h2 {
   margin-left: 10%;
 }
 
-/* Imagem */
+
 .sobre-imagem img {
   max-width: 100%;
   height: auto;
@@ -276,7 +257,7 @@ h2 {
 }
 
 
-/* Coluna do texto */
+
 .sobre-texto {
   flex: 0 0 60%;
 }
@@ -298,7 +279,7 @@ h2 {
   flex-direction: column;
 }
 
-/* Espaço entre texto e imagem inferior */
+
 .sobre-imagem-secundaria {
   margin-top: 1rem;
   display: flex;
